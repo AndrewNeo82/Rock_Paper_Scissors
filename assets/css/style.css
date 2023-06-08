@@ -1,5 +1,9 @@
 
+body {
+    background-color: red;
+}
 .header h1 {
+    color: blue;
     font-size: 60px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
@@ -14,6 +18,9 @@
     padding: 10px;
 }
 #player_choice, #cpu_choice {
+    background-image: url(/assets/images/istockphoto-1174967858-170667a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 1%;
     border-radius: 50%;
     display: flexbox;
