@@ -34,8 +34,14 @@ body {
 #buttons {
     display: flex;
     justify-content: center;
-    padding: 10px;
+}
+#rock, #paper, #scissors{
+    border-radius: 10%;
+    margin: 5px;
+    padding: 1%;
+    width: 100px;
 }
 #restart {
+    clear: both;
     text-align: center;
 }
