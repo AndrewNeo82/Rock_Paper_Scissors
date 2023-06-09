@@ -1,8 +1,10 @@
 * {
     margin: 0;
+    max-width: 100%;
+    max-width: 100%;
 }
 body {
-    height: 80vh;
+    height: 70vh;
     background-color: #00203fff;
 }
 .header {
@@ -88,4 +90,23 @@ button:hover {
     font-size: 20px;
     font-weight: 500;
     margin: 3%;
+}
+@media (max-width: 414px) {
+    .header {
+        height: 5vh;
+    }
+    .header h1 {
+        font-size: 30px;
+    }
+    #results {
+        flex-direction: column;
+        margin: auto;
+        margin-top: 5%;
+    }
+    #player_choice, #cpu_choice {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+       
+    }
 }
