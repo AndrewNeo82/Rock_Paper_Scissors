@@ -14,8 +14,9 @@ body {
     width:100%;
 }
 .header h1 {
+    text-align: center;
     color: #adefd1ff;
-    font-size: 40px;
+    font-size: 45px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
     padding: 5px;
@@ -40,6 +41,16 @@ body {
     border: 15px solid #adefd1ff;
     padding: 20px;
     text-align: center;
+}
+#scores{ 
+    clear: both;
+    color: #adefd1ff;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 25px;
+    border: 2px solid #adefd1ff;
+
 }
 #buttons {
     display: flex;
@@ -95,7 +106,8 @@ button:hover {
         height: 5vh;
     }
     .header h1 {
-        font-size: 30px;
+        font-size: 28px;
+        text-align: center;
     }
     #results {
         flex-direction: column;
@@ -109,3 +121,4 @@ button:hover {
        
     }
 }
+
