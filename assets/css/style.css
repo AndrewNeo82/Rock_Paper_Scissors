@@ -1,25 +1,24 @@
 * {
     margin: 0;
-    max-width: 100%;
-    max-width: 100%;
+   
 }
 body {
     height: 70vh;
     background-color: #00203fff;
 }
 .header {
-    background-color: #adefd1ff;
+    background-color: #00203fff;
     color: #00203fff;
     height: 10vh;
+    text-align: left;
     width:100%;
 }
 .header h1 {
-    color: #00203fff;
-    font-size: 60px;
+    color: #adefd1ff;
+    font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
     padding: 5px;
-    text-align: center;
     text-transform: capitalize;
 }
 
