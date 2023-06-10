@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Rock Paper Scissors</title></head>
+    <title>Rock Paper Scissors</title>
+</head>
+
 <body>
-    <header class="header"><h1>Rock Paper Scissors! <i class="fa-regular fa-hand-back-fist" ></i> 
-        <i class="fa-regular fa-hand"></i> <i class="fa-regular fa-hand-scissors"></i></h1>
+    <header class="header">
+        <h1>Rock Paper Scissors! <i class="fa-regular fa-hand-back-fist"></i>
+            <i class="fa-regular fa-hand"></i> <i class="fa-regular fa-hand-scissors"></i></h1>
     </header>
-    <main id="main_area">
-        <div id="game_container">
+
+    <div id="game_container">
 
 
-            <div id="results">
-                
-                <div id="player_choice"></div>
-                
-                <div id="cpu_choice"></div>
-            </div>
-            <div id="scores">
-                <span id="player_score"> Player Score  0  : </span>
-                <span id="cpu_score">  0  Computer Score</span>
-            </div>
-            <div id="buttons">
-                <button id="rock" aria-label="choose rock">  <i class="fa-solid fa-hand-back-fist" style="color: #00203fff;"></i></button>
-                <button id="paper" aria-label="choose paper"> <i class="fa-solid fa-hand" style="color: #00203fff;"></i></button>
-                <button id="scissors" aria-label="choose scissors"> <i class="fa-solid fa-hand-scissors" style="color: #00203fff;"></i></button>
-            </div>
-            <div id="restart">
-                <button>Play Again?</button>
-            </div>
-            
+        <div id="results">
+
+            <div id="player_choice" class="last_pick"></div>
+
+            <div id="cpu_choice" class="last_pick"></div>
         </div>
-    </main>
+        <div id="scores">
+            <span id="player_score"> Player Score 0 : </span>
+            <span id="cpu_score"> 0 Computer Score</span>
+        </div>
+        <div id="buttons">
+            <button id="rock" class="hand" aria-label="choose rock"> <i class="fa-solid fa-hand-back-fist"
+                    style="color: #00203fff;"></i></button>
+            <button id="paper" class="hand" aria-label="choose paper"> <i class="fa-solid fa-hand"
+                    style="color: #00203fff;"></i></button>
+            <button id="scissors" class="hand" aria-label="choose scissors"> <i class="fa-solid fa-hand-scissors"
+                    style="color: #00203fff;"></i></button>
+        </div>
+        <div id="restart">
+            <button>Play Again?</button>
+        </div>
+
+    </div>
+
     <footer class="footer">
 
     </footer>
-    
-<script src="assets/js/script.js"></script> 
-<script src="https://kit.fontawesome.com/b75fe46682.js" crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/b75fe46682.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
