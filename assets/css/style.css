@@ -29,12 +29,13 @@ body {
     background-color: grey;
     margin: 5%;
     border-radius: 50%;
-    display: flexbox;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 200px;
     border: 15px solid #adefd1ff;
-    text-align: center;
+    font-size: 100px;
 }
 #scores{ 
     clear: both;
