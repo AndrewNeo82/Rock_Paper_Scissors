@@ -27,7 +27,7 @@ body {
 }
 .last_pick {
     background-color: grey;
-    margin: 5%;
+    margin: 3%;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -37,6 +37,16 @@ body {
     border: 15px solid #adefd1ff;
     font-size: 100px;
 }
+#message {
+    clear: both;
+    color: #adefd1ff;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 25px;
+    border: 2px solid #adefd1ff;
+    border-radius: 3px;
+}
 #scores{ 
     clear: both;
     color: #adefd1ff;
@@ -45,6 +55,7 @@ body {
     width: 400px;
     height: 25px;
     border: 2px solid #adefd1ff;
+    border-radius: 3px;
 
 }
 #buttons {
@@ -88,6 +99,7 @@ button:hover {
     justify-content: center;
 }
 #restart button {
+    display: none;
     background-color: grey;
     border: 5px solid #adefd1ff;
     border-radius: 10%;
