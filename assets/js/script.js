@@ -11,7 +11,7 @@ const  choicesMap = {
 // Elements 
 
 const playerPick = document.getElementById("player_choice");
-const ComputerPick = document.getElementById("computer_choice");
+const computerPick = document.getElementById("computer_choice");
 const yourScore = document.getElementById("player_score");
 const cpuscore = document.getElementById("cpu_score");
 const restartGame = document.getElementById("restart_button");
@@ -25,6 +25,7 @@ let ComputerScore = 0;
 // function to generate the computers turn and display previous pick
 function computerTurn () {
     const choices = ["rock", "paper", "scissors"];
+    computerPick.innerHTML = choicesMap[playerChoice];
     let cTurn = Math.floor(Math.random()* choices.length);
     return choices[cTurn];
 }
@@ -32,23 +33,20 @@ function computerTurn () {
 // function to handle the players turn display result message and update score
 function gamePlay(playerChoice) {
   const computerChoice = computerTurn();
+  playerPick.innerHTML = choicesMap[playerChoice];
 
-  if (playerChoice === computerChoice) {
+    if (playerChoice === computerChoice) {
     message.innerHTML = "its a draw";
-    playerPick.innerHTML = choicesMap[playerChoice];
   } else if (
     (playerChoice === "rock" && computerChoice === "scissors") ||
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")
   ) {
     message.innerHTML =" you won the Round";
-    playerPick.innerHTML = choicesMap[playerChoice];
     playerScore++;
     yourScore.textContent = "Player Score: " + playerScore;
-
   } else {
     message.innerHTML=" Oh No, You Lost (sad face)";
-    playerPick.innerHTML = choicesMap[playerChoice];
     computerScore++;
     cpuScore.textContent = "Computer Score: " + computerScore;
 
