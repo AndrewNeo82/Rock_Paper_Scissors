@@ -56,6 +56,7 @@ function gamePlay(playerChoice) {
   }
   endGame ()
 }
+// check if score of 5 has been reached and disaes the buttons
 
 function endGame () {
   if (playerScore === 5){
@@ -63,11 +64,13 @@ function endGame () {
     rockBtn.disabled = true;
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
+    restartGame.disabled = false;
   } else if (playerScore === 5) {
     message.innerHTML= "Disaster strikes, you lost! Try again you can do it!";
     rockBtn.disabled = true;
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
+    restartGame.disabled= false;
   }
 }
 
