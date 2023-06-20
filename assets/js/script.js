@@ -54,6 +54,21 @@ function gamePlay(playerChoice) {
     cpuScore.textContent = "Computer Score: " + computerScore;
 
   }
+  endGame ()
+}
+
+function endGame () {
+  if (playerScore === 5){
+    message.innerHTML= "Congratulations, you Won! Somewhere theres Fireworks";
+    rockBtn.disabled = true;
+    paperBtn.disabled = true;
+    scissorsBtn.disabled = true;
+  } else if (playerScore === 5) {
+    message.innerHTML= "Disaster strikes, you lost! Try again you can do it!";
+    rockBtn.disabled = true;
+    paperBtn.disabled = true;
+    scissorsBtn.disabled = true;
+  }
 }
 
 // event listeners
