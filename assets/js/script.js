@@ -34,7 +34,7 @@ function computerTurn() {
 
 function gamePlay(playerChoice) {
   const computerChoice = computerTurn();
-    playerPick.innerHTML = choicesMap[playerChoice];
+  playerPick.innerHTML = choicesMap[playerChoice];
 
   if (playerChoice === computerChoice) {
     message.innerHTML = "its a draw";
@@ -43,40 +43,40 @@ function gamePlay(playerChoice) {
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")
   ) {
-    message.innerHTML =" you won the Round";
+    message.innerHTML = " you won the Round";
     playerScore++;
     yourScore.textContent = "Player Score: " + playerScore;
 
   } else {
-    message.innerHTML=" Oh No, You Lost (sad face)";
+    message.innerHTML = " Oh No, You Lost (sad face)";
     computerScore++;
     cpuScore.textContent = "Computer Score: " + computerScore;
 
   }
-  endGame ()
+  endGame()
 }
 // check if score of 5 has been reached and disaes the buttons
 
-function endGame () {
-  if (playerScore === 3){
-    message.innerHTML= "Congratulations, you Won! Somewhere theres Fireworks";
+function endGame() {
+  if (playerScore === 3) {
+    message.innerHTML = "Congratulations, you Won! Somewhere theres Fireworks";
     rockBtn.disabled = true;
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
-    restartGame.style.display="block";
+    restartGame.style.display = "block";
 
-    } else if (computerScore === 3) {
-    message.innerHTML= "Disaster strikes, you lost! Try again you can do it!";
+  } else if (computerScore === 3) {
+    message.innerHTML = "Disaster strikes, you lost! Try again you can do it!";
     rockBtn.disabled = true;
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
-    restartGame.style.display="block";
+    restartGame.style.display = "block";
+
+  }
 
 }
-  
-}
 
-function resetGame () {
+function resetGame() {
   playerScore = 0;
   computerScore = 0;
   yourScore.textContent = "Player Score: " + playerScore;
@@ -84,22 +84,22 @@ function resetGame () {
   rockBtn.disabled = false;
   paperBtn.disabled = false;
   scissorsBtn.disabled = false;
-  restartGame.style.display="none";
-  message.innerHTML= "Rock Beats Scissors Beats Paper Beats Rock";
+  restartGame.style.display = "none";
+  message.innerHTML = "Rock Beats Scissors Beats Paper Beats Rock";
 }
 // event listeners for choice buttons
 
 document.getElementById('rock').addEventListener('click', function () {
-    gamePlay('rock');
-  });
-  document.getElementById('paper').addEventListener('click', function () {
-    gamePlay('paper');
-  });
-  document.getElementById('scissors').addEventListener('click', function () {
-    gamePlay('scissors');
-  });
-  
-  // eventy listener for button to play again 
-  document.getElementById("restart_button").addEventListener('click', function () {
-    resetGame();
-  });
+  gamePlay('rock');
+});
+document.getElementById('paper').addEventListener('click', function () {
+  gamePlay('paper');
+});
+document.getElementById('scissors').addEventListener('click', function () {
+  gamePlay('scissors');
+});
+
+// eventy listener for button to play again 
+document.getElementById("restart_button").addEventListener('click', function () {
+  resetGame();
+});
