@@ -58,24 +58,34 @@ function gamePlay(playerChoice) {
 // check if score of 5 has been reached and disaes the buttons
 
 function endGame () {
-  if (playerScore === 5){
+  if (playerScore === 1){
     message.innerHTML= "Congratulations, you Won! Somewhere theres Fireworks";
     rockBtn.disabled = true;
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
     restartGame.style.display="block";
 
-    } else if (computerScore === 5) {
+    } else if (computerScore === 1) {
     message.innerHTML= "Disaster strikes, you lost! Try again you can do it!";
     rockBtn.disabled = true;
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
     restartGame.style.display="block";
-
-     }
+    resetGame()
+}
+     
 }
 
-// event listeners
+function resetGame () {
+  playerScore = 0;
+  computerScore = 0;
+  rockBtn.disabled = false;
+  paperBtn.disabled = false;
+  scissorsBtn.disabled = false;
+  restartGame.style.display="none";
+  message.innerHTML= "Rock Beats Scissors Beats Paper Beats Rock";
+}
+// event listeners for choice buttons
 
 document.getElementById('rock').addEventListener('click', function () {
     gamePlay('rock');
@@ -87,3 +97,7 @@ document.getElementById('rock').addEventListener('click', function () {
     gamePlay('scissors');
   });
   
+  // eventy listener for button to play again 
+  document.getElementById("restart_button").addEventListener('click', function () {
+    resetGame();
+  });
