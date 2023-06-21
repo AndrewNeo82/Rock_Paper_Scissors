@@ -71,14 +71,16 @@ function endGame () {
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
     restartGame.style.display="block";
-    resetGame()
+
 }
-     
+  
 }
 
 function resetGame () {
   playerScore = 0;
   computerScore = 0;
+  yourScore.textContent = "Player Score: " + playerScore;
+  cpuScore.textContent = "Computer Score: " + computerScore;
   rockBtn.disabled = false;
   paperBtn.disabled = false;
   scissorsBtn.disabled = false;
