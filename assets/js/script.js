@@ -63,11 +63,15 @@ function endGame () {
     rockBtn.disabled = true;
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
+    restartGame.style.display="block";
+
     } else if (computerScore === 5) {
     message.innerHTML= "Disaster strikes, you lost! Try again you can do it!";
     rockBtn.disabled = true;
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
+    restartGame.style.display="block";
+
      }
 }
 
