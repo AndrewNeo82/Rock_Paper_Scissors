@@ -109,21 +109,22 @@ button:hover {
 }
 @media (max-width: 414px) {
     .header {
-        height: 5vh;
+        height: 3vh;
     }
     .header h1 {
-        font-size: 28px;
+        font-size: 24px;
         text-align: center;
     }
     #results {
+        align-items: center;
         flex-direction: column;
         margin: auto;
        
     }
     .last_pick {
         justify-content: space-between;
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         margin: auto;
         margin-top: 3%;
        padding: 15px;

@@ -58,14 +58,14 @@ function gamePlay(playerChoice) {
 // check if score of 5 has been reached and disaes the buttons
 
 function endGame () {
-  if (playerScore === 1){
+  if (playerScore === 3){
     message.innerHTML= "Congratulations, you Won! Somewhere theres Fireworks";
     rockBtn.disabled = true;
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
     restartGame.style.display="block";
 
-    } else if (computerScore === 1) {
+    } else if (computerScore === 3) {
     message.innerHTML= "Disaster strikes, you lost! Try again you can do it!";
     rockBtn.disabled = true;
     paperBtn.disabled = true;
