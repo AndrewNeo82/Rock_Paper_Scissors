@@ -33,7 +33,6 @@ function computerTurn() {
 // function to handle player choice
 
 function gamePlay(playerChoice) {
-  const choices = ["rock", "paper", "scissors"];
   const computerChoice = computerTurn();
     playerPick.innerHTML = choicesMap[playerChoice];
 
@@ -64,14 +63,12 @@ function endGame () {
     rockBtn.disabled = true;
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
-    
-  } else if (computerScore === 5) {
+    } else if (computerScore === 5) {
     message.innerHTML= "Disaster strikes, you lost! Try again you can do it!";
     rockBtn.disabled = true;
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
-    
-  }
+     }
 }
 
 // event listeners
