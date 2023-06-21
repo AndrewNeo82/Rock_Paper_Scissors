@@ -37,13 +37,13 @@ function gamePlay(playerChoice) {
   playerPick.innerHTML = choicesMap[playerChoice];
 
   if (playerChoice === computerChoice) {
-    message.innerHTML = "its a draw";
+    message.innerHTML = "A Draw! Everybody Loses!";
   } else if (
     (playerChoice === "rock" && computerChoice === "scissors") ||
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")
   ) {
-    message.innerHTML = " you won the Round";
+    message.innerHTML = " You win! What a hero!";
     playerScore++;
     yourScore.textContent = "Player Score: " + playerScore;
 
