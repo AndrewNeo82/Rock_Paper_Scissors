@@ -79,6 +79,16 @@ body {
 
 }
 
+#choose {
+    text-align: center;
+}
+#choose h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #adefd1ff;
+}
+
 #buttons {
     display: flex;
     justify-content: center;
@@ -147,9 +157,10 @@ button:hover {
     }
 
     .header h1 {
-        font-size: 25px;
+        font-size: 28px;
         text-align: center;
         letter-spacing: 2px;
+        font-weight: 500;
     }
 
     #results {
