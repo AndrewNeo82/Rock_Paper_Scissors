@@ -22,6 +22,7 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
     text-transform: capitalize;
+    letter-spacing: 2px;
 }
 
 #results {
@@ -60,6 +61,8 @@ body {
     height: 50px;
     border: 2px solid #adefd1ff;
     border-radius: 3px;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 #scores {
@@ -71,6 +74,8 @@ body {
     height: 25px;
     border: 2px solid #adefd1ff;
     border-radius: 3px;
+    font-weight: 500;
+    letter-spacing: 2px;
 
 }
 
@@ -116,9 +121,9 @@ button:hover {
     border: 10px solid #adefd1ff;
     font-size: 50px;
     color: black;
-    margin: 3%;
-    width: 100px;
-    height: 100px;
+    margin: 2%;
+    width: 130px;
+    height: 130px;
 }
 
 #restart {
@@ -142,8 +147,9 @@ button:hover {
     }
 
     .header h1 {
-        font-size: 28px;
+        font-size: 25px;
         text-align: center;
+        letter-spacing: 2px;
     }
 
     #results {
@@ -153,7 +159,7 @@ button:hover {
     }
 
     .last_pick {
-        justify-content: space-between;
+        justify-content: center;
         width: 150px;
         height: 150px;
         margin: auto;
