@@ -40,6 +40,14 @@ body {
     height: 200px;
     border: 15px solid #adefd1ff;
     font-size: 100px;
+    position: relative;
+}
+
+.last_pick i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #message {
@@ -47,6 +55,7 @@ body {
     color: #adefd1ff;
     text-align: center;
     margin: auto;
+    margin-top: 10px;
     width: 400px;
     height: 50px;
     border: 2px solid #adefd1ff;
@@ -129,16 +138,15 @@ button:hover {
 
 @media (max-width: 414px) {
     .header {
-        height: 3vh;
+        height: 4vh;
     }
 
     .header h1 {
-        font-size: 24px;
+        font-size: 28px;
         text-align: center;
     }
 
     #results {
-        align-items: center;
         flex-direction: column;
         margin: auto;
 
@@ -146,15 +154,15 @@ button:hover {
 
     .last_pick {
         justify-content: space-between;
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
         margin: auto;
-        margin-top: 3%;
+        margin-top: 10px;
         padding: 15px;
     }
 
     #scores {
-        margin-top: 10%;
+        margin-top: 10px;
     }
 
 }
