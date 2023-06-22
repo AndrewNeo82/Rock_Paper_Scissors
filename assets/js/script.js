@@ -81,21 +81,16 @@ function gamePlay(playerChoice) {
   playerPick.innerHTML = choicesMap[playerChoice];
 
   if (playerChoice === computerChoice) {
-    message.innerHTML = "A Draw! Everybody Loses!";
+    draw();
   } else if (
     (playerChoice === "rock" && computerChoice === "scissors") ||
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")
   ) {
-    const winMessage = pickMessage();
-    message.innerHTML = winMessage;
-    playerScore++;
-    yourScore.textContent = "Player Score: " + playerScore;
+    winner();
 
   } else {
-    message.innerHTML = " Oh No, You Lost (sad face)";
-    computerScore++;
-    cpuScore.textContent = "Computer Score: " + computerScore;
+    loser();
 
   }
   endGame()
