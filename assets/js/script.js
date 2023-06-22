@@ -135,6 +135,10 @@ function endGame() {
 function resetGame() {
   playerScore = 0;
   computerScore = 0;
+  playerPick.style.borderColor="#adefd1ff";
+  playerPick.innerHTML="<p>You Pick</p>";
+  computerPick.style.borderColor="#adefd1ff";
+  computerPick.innerHTML="<p>Computer Pick</p>";
   yourScore.textContent = "Player Score: " + playerScore;
   cpuScore.textContent = "Computer Score: " + computerScore;
   rockBtn.style.display= "block";
