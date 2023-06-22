@@ -73,14 +73,27 @@ body {
     margin: auto;
     margin-top: 10px;
     width: 400px;
-    height: 25px;
+    height: 40px;
     border: 2px solid #adefd1ff;
     border-radius: 3px;
     font-weight: 500;
     letter-spacing: 2px;
+    position: relative;
 
+    
 }
-
+#player_score {
+    margin-top: 10px;
+    margin-left: 10%;
+    display: block;
+    float:left;
+}
+#cpu_score {
+    margin-top: 10px;
+    margin-right: 10%;
+    display: block;
+    float:right;
+}
 #choose {
     text-align: center;
     font-weight: 100;
