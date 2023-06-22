@@ -49,6 +49,22 @@ function pickMessage() {
   return winMessage;
 }
 
+// function to pick message if round is lost 
+
+function pickLoseMessage() {
+  const loseMessages = [
+    "The Computer Cheated",
+    "So unlucky",
+    "Better luck next time",
+    "Try again, you'll win this time!",
+    " Oh No, You Lost (sad face)"
+   ];
+
+  const loseIndex = Math.floor(Math.random() * loseMessages.length);
+  const loseMessage = loseMessages[loseIndex];
+
+  return loseMessage;
+}
 
 // function to handle player choice and the main game logic
 
