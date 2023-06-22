@@ -100,17 +100,17 @@ function gamePlay(playerChoice) {
 function endGame() {
   if (playerScore === 5) {
     message.innerHTML = "Congratulations, you Won! Somewhere theres Fireworks";
-    rockBtn.disabled = true;
-    paperBtn.disabled = true;
-    scissorsBtn.disabled = true;
+    rockBtn.style.display = "none";
+    paperBtn.style.display = "none";
+    scissorsBtn.style.display = "none";
     restartGame.style.display = "block";
     choose.innerHTML = "<h2>Game Over!</h2>";
 
   } else if (computerScore === 5) {
-    message.innerHTML = "Disaster strikes, you lost! Try again you can do it!";
-    rockBtn.disabled = true;
-    paperBtn.disabled = true;
-    scissorsBtn.disabled = true;
+    message.innerHTML = "Disaster strikes, you lost! Play again you can do it!";
+    rockBtn.style.display = "none";
+    paperBtn.style.display = "none";
+    scissorsBtn.style.display = "none";
     restartGame.style.display = "block";
     choose.innerHTML = "<h2>Game Over!</h2>";
 
