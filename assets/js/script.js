@@ -40,7 +40,7 @@ function pickMessage() {
     "Wow so Impressive!",
     "The Computer Never Stood a Chance!",
     "Winner Winner Winner"
-   ];
+  ];
 
   const winIndex = Math.floor(Math.random() * winMessages.length);
   const winMessage = winMessages[winIndex];
@@ -57,7 +57,7 @@ function pickLoseMessage() {
     " Better luck next time ",
     "Try again you'll win this time",
     " Oh No, You Lost (sad face)"
-   ];
+  ];
 
   const loseIndex = Math.floor(Math.random() * loseMessages.length);
   const loseMessage = loseMessages[loseIndex];
@@ -74,48 +74,48 @@ function gamePlay(playerChoice) {
   playerPick.innerHTML = choicesMap[playerChoice];
 
   if (playerChoice === computerChoice) {
-  draw()
+    draw()
   } else if (
     (playerChoice === "rock" && computerChoice === "scissors") ||
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")
   ) {
-   winner()
+    winner()
 
   } else {
-  loser()
-    }
+    loser()
+  }
   endGame()
 }
 
 /* Function called when the player wins the round,  displays a message increments player 
 score and changes the border of the last pick display */
-function winner () {
- const winMessage = pickMessage();
-    message.textContent = winMessage;
-    playerScore++;
-    yourScore.textContent = "Player Score: " + playerScore;
-    playerPick.style.borderColor = "green"; 
-    computerPick.style.borderColor = "red";
+function winner() {
+  const winMessage = pickMessage();
+  message.textContent = winMessage;
+  playerScore++;
+  yourScore.textContent = "Player Score: " + playerScore;
+  playerPick.style.borderColor = "green";
+  computerPick.style.borderColor = "red";
 }
 /* Function called when the player loses the round,  displays a message increments computer 
 score and changes the border of the last pick display. */
 
-function loser (){
-const loseMessage = pickLoseMessage();
-    message.textContent = loseMessage;
-    computerScore++;
-    cpuScore.textContent = "Computer Score: " + computerScore;
-    playerPick.style.borderColor = "red"; 
-    computerPick.style.borderColor = "green";
+function loser() {
+  const loseMessage = pickLoseMessage();
+  message.textContent = loseMessage;
+  computerScore++;
+  cpuScore.textContent = "Computer Score: " + computerScore;
+  playerPick.style.borderColor = "red";
+  computerPick.style.borderColor = "green";
 }
 
 // Function called when the round is  a draw, displays a message and changed border of last pick.
 
 function draw() {
-    message.textContent = "A Draw! Everybody Loses!";
-    playerPick.style.borderColor = "black"; 
-    computerPick.style.borderColor = "black";
+  message.textContent = "A Draw! Everybody Loses!";
+  playerPick.style.borderColor = "black";
+  computerPick.style.borderColor = "black";
 }
 
 /* Check if score of 5 has been reached and if it has ends the game 
@@ -138,7 +138,7 @@ function endGame() {
     scissorsBtn.style.display = "none";
     restartGame.style.display = "block";
     choose.innerHTML = "<h2>Game Over!</h2>";
-}
+  }
 }
 
 // Function to reset the game, when the reset button is clicked the game is restored to its default values
@@ -146,19 +146,19 @@ function endGame() {
 function resetGame() {
   playerScore = 0;
   computerScore = 0;
-  playerPick.style.borderColor="#adefd1ff";
-  playerPick.innerHTML="<p>You Pick</p>";
-  computerPick.style.borderColor="#adefd1ff";
-  computerPick.innerHTML="<p>Computer Pick</p>";
+  playerPick.style.borderColor = "#adefd1ff";
+  playerPick.innerHTML = "<p>You Pick</p>";
+  computerPick.style.borderColor = "#adefd1ff";
+  computerPick.innerHTML = "<p>Computer Pick</p>";
   yourScore.textContent = "Player Score: " + playerScore;
   cpuScore.textContent = "Computer Score: " + computerScore;
-  rockBtn.style.display= "block";
-  paperBtn.style.display= "block";
-  scissorsBtn.style.display= "block";
+  rockBtn.style.display = "block";
+  paperBtn.style.display = "block";
+  scissorsBtn.style.display = "block";
   restartGame.style.display = "none";
   message.textContent = "Rock Beats Scissors Beats Paper Beats Rock";
   choose.innerHTML = "<h2>Choose Rock Paper Scissors</h2>";
-  
+
 }
 // Event listeners for choice buttons
 

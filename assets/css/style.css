@@ -85,24 +85,28 @@ body {
     letter-spacing: 2px;
     position: relative;
 
-    
+
 }
+
 #player_score {
     margin-top: 10px;
     margin-left: 10%;
     display: block;
-    float:left;
+    float: left;
 }
+
 #cpu_score {
     margin-top: 10px;
     margin-right: 10%;
     display: block;
-    float:right;
+    float: right;
 }
+
 #choose {
     text-align: center;
     font-weight: 100;
 }
+
 #choose h2 {
     margin-top: 5px;
     font-weight: 300;
@@ -210,8 +214,8 @@ button:hover {
     .hand {
         margin-top: 20px;
     }
+
     #restart {
         margin-top: 20px;
     }
 }
-
