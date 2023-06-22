@@ -65,6 +65,14 @@ function pickLoseMessage() {
 
   return loseMessage;
 }
+// function to pick a random message if the round is a draw and display it to the message section.
+
+function draw() {
+  message.textContent = "A Draw! Everybody Loses!";
+  playerPick.style.borderColor = "black"; 
+  computerPick.style.borderColor = "black";
+
+}
 
 // function to handle player choice and the main game logic
 
