@@ -30,6 +30,24 @@ function computerTurn() {
   return choices[cTurn];
 }
 
+// function to handle choice of win messages 
+function pickMessage() {
+  const winMessages = [
+    "Congratulations! You won!",
+    "You win! What a hero!",
+    "WooHoo ",
+    "Victory is yours! Well done!",
+    "The Computer Never Stood a Chance!",
+    "Win Win Win"
+   ];
+
+  const winIndex = Math.floor(Math.random() * winMessages.length);
+  const winMessage = winMessages[winIndex];
+
+  return winMessage;
+}
+
+
 // function to handle player choice
 
 function gamePlay(playerChoice) {
@@ -43,7 +61,8 @@ function gamePlay(playerChoice) {
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")
   ) {
-    message.innerHTML = " You win! What a hero!";
+    const winMessage = pickMessage();
+    message.innerHTML = winMessage;
     playerScore++;
     yourScore.textContent = "Player Score: " + playerScore;
 
