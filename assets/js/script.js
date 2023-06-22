@@ -38,9 +38,9 @@ function pickMessage() {
     "Congratulations! You won!",
     "You win! What a hero!",
     "WooHoo ",
-    "Victory is yours! Well done!",
+    "Wow so Impressive!",
     "The Computer Never Stood a Chance!",
-    "Win Win Win"
+    "Winner Winner Winner"
    ];
 
   const winIndex = Math.floor(Math.random() * winMessages.length);
@@ -49,14 +49,12 @@ function pickMessage() {
   return winMessage;
 }
 
-// function to pick message if round is lost 
-
 function pickLoseMessage() {
   const loseMessages = [
     "The Computer Cheated",
     "So unlucky",
-    "Better luck next time",
-    "Try again, you'll win this time!",
+    " Better luck next time ",
+    "Try again you'll win this time",
     " Oh No, You Lost (sad face)"
    ];
 
@@ -65,14 +63,7 @@ function pickLoseMessage() {
 
   return loseMessage;
 }
-// function to pick a random message if the round is a draw and display it to the message section.
 
-function draw() {
-  message.textContent = "A Draw! Everybody Loses!";
-  playerPick.style.borderColor = "black"; 
-  computerPick.style.borderColor = "black";
-
-}
 
 // function to handle player choice and the main game logic
 
@@ -81,21 +72,44 @@ function gamePlay(playerChoice) {
   playerPick.innerHTML = choicesMap[playerChoice];
 
   if (playerChoice === computerChoice) {
-    draw();
+  draw()
   } else if (
     (playerChoice === "rock" && computerChoice === "scissors") ||
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")
   ) {
-    winner();
+   winner()
 
   } else {
-    loser();
-
-  }
+  loser()
+    }
   endGame()
 }
 // check if score of 5 has been reached and disaes the buttons
+function winner () {
+ const winMessage = pickMessage();
+    message.textContent = winMessage;
+    playerScore++;
+    yourScore.textContent = "Player Score: " + playerScore;
+    playerPick.style.borderColor = "green"; 
+    computerPick.style.borderColor = "red";
+}
+function loser (){
+const loseMessage = pickLoseMessage();
+    message.textContent = loseMessage;
+    computerScore++;
+    cpuScore.textContent = "Computer Score: " + computerScore;
+    playerPick.style.borderColor = "red"; 
+    computerPick.style.borderColor = "green";
+}
+
+function draw() {
+    message.textContent = "A Draw! Everybody Loses!";
+    playerPick.style.borderColor = "black"; 
+    computerPick.style.borderColor = "black";
+    
+
+}
 
 function endGame() {
   if (playerScore === 5) {
@@ -123,14 +137,15 @@ function resetGame() {
   computerScore = 0;
   yourScore.textContent = "Player Score: " + playerScore;
   cpuScore.textContent = "Computer Score: " + computerScore;
-  rockBtn.disabled = false;
-  paperBtn.disabled = false;
-  scissorsBtn.disabled = false;
+  rockBtn.style.display= "block";
+  paperBtn.style.display= "block";
+  scissorsBtn.style.display= "block";
   restartGame.style.display = "none";
-  message.innerHTML = "Rock Beats Scissors Beats Paper Beats Rock";
+  message.textContent = "Rock Beats Scissors Beats Paper Beats Rock";
   choose.innerHTML = "<h2>Choose Rock Paper Scissors</h2>";
+  
 }
-// event listeners for choice buttons
+// vent listeners for choice buttons
 
 document.getElementById('rock').addEventListener('click', function () {
   gamePlay('rock');
