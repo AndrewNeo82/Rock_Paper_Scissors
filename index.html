@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock Paper Scissors</title>
+    <link href="/assets/favicon/favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 
 <body>
+    <!--Header name of game and icons-->
     <header class="header">
         <h1>Rock Paper Scissors! <i class="fa-regular fa-hand-back-fist"></i>
             <i class="fa-regular fa-hand"></i> <i class="fa-regular fa-hand-scissors"></i></h1>
     </header>
 
     <div id="game_container">
-
+        <!--section to display the previous pick of the user and the computer-->
         <div id="results">
             <div id="player_choice" class="last_pick">
                 <p>Your Pick</p>
@@ -25,13 +27,16 @@
                 <p>Computer Pick</p>
             </div>
         </div>
+        <!--message section displays random message after each round-->
         <div id="message">
             <p>Rock Beats Scissors Beats Paper Beats Rock </p>
         </div>
+        <!--scoreboard leeps track of player and compuetr score until either  reaches 5-->
         <div id="scores">
             <span id="player_score" class="score"> Player Score 0 : </span>
             <span id="cpu_score" class="score"> 0 Computer Score</span>
         </div>
+        <!--the choice buttons Rock paper scissors-->
         <div id="buttons">
 
             <button id="rock" class="hand" aria-label="choose rock"> <i class="fa-solid fa-hand-back-fist"
@@ -44,10 +49,11 @@
                     style="color: #00203fff;"></i>
             </button>
         </div>
+        <!--Simple instructions to choose from one of the choices-->
         <span id="choose">
             <h2>Choose Rock Paper or scissors</h2>
         </span>
-
+        <!--restart button resets the game -->
         <div id="restart">
             <button id="restart_button">Play Again?</button>
         </div>
