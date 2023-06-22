@@ -18,6 +18,8 @@ const rockBtn = document.getElementById("rock");
 const paperBtn = document.getElementById("paper");
 const scissorsBtn = document.getElementById("scissors");
 const message = document.getElementById("message")
+const choose = document.getElementById("choose")
+
 
 let playerScore = 0;
 let computerScore = 0;
@@ -48,7 +50,7 @@ function pickMessage() {
 }
 
 
-// function to handle player choice
+// function to handle player choice and the main game logic
 
 function gamePlay(playerChoice) {
   const computerChoice = computerTurn();
@@ -83,6 +85,7 @@ function endGame() {
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
     restartGame.style.display = "block";
+    choose.innerHTML = "<h2>Game Over!</h2>";
 
   } else if (computerScore === 3) {
     message.innerHTML = "Disaster strikes, you lost! Try again you can do it!";
@@ -90,6 +93,7 @@ function endGame() {
     paperBtn.disabled = true;
     scissorsBtn.disabled = true;
     restartGame.style.display = "block";
+    choose.innerHTML = "<h2>Game Over!</h2>";
 
   }
 
@@ -105,6 +109,7 @@ function resetGame() {
   scissorsBtn.disabled = false;
   restartGame.style.display = "none";
   message.innerHTML = "Rock Beats Scissors Beats Paper Beats Rock";
+  choose.innerHTML = "<h2>Choose Rock Paper Scissors</h2>";
 }
 // event listeners for choice buttons
 
