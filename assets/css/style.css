@@ -44,7 +44,7 @@ body {
     position: relative;
 }
 
-.last_pick i {
+.last_pick p {
     position: absolute;
     top: 50%;
     left: 50%;
