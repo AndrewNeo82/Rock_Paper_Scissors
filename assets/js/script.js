@@ -49,6 +49,8 @@ function pickMessage() {
   return winMessage;
 }
 
+// function to pick a message to display if the computer wins the round 
+
 function pickLoseMessage() {
   const loseMessages = [
     "The Computer Cheated",
@@ -65,7 +67,8 @@ function pickLoseMessage() {
 }
 
 
-// function to handle player choice and the main game logic
+/* function to handle player choice and the main game logic which 
+ calls the functions that handle if the player wins loses or draws the round */
 
 function gamePlay(playerChoice) {
   const computerChoice = computerTurn();
@@ -85,7 +88,9 @@ function gamePlay(playerChoice) {
     }
   endGame()
 }
-// check if score of 5 has been reached and disaes the buttons
+
+/* function called when the player wins the round  displays a message increments player 
+score and changes the border of the last pick display */
 function winner () {
  const winMessage = pickMessage();
     message.textContent = winMessage;
@@ -94,6 +99,9 @@ function winner () {
     playerPick.style.borderColor = "green"; 
     computerPick.style.borderColor = "red";
 }
+/* function called when the player loses the round  displays a message increments computer 
+score and changes the border of the last pick display */
+
 function loser (){
 const loseMessage = pickLoseMessage();
     message.textContent = loseMessage;
@@ -103,6 +111,8 @@ const loseMessage = pickLoseMessage();
     computerPick.style.borderColor = "green";
 }
 
+// function called when the round is  a draw, displays a message and changed border of last pick.
+
 function draw() {
     message.textContent = "A Draw! Everybody Loses!";
     playerPick.style.borderColor = "black"; 
@@ -110,6 +120,10 @@ function draw() {
     
 
 }
+
+/* check if score of 5 has been reached and if it has ends the game 
+hides the choice buttons displays the message game over and shows the reset button */
+
 
 function endGame() {
   if (playerScore === 5) {
@@ -132,6 +146,8 @@ function endGame() {
 
 }
 
+// function to reset the game, when the reset button is clicked the game is restored to its default values
+
 function resetGame() {
   playerScore = 0;
   computerScore = 0;
@@ -149,7 +165,7 @@ function resetGame() {
   choose.innerHTML = "<h2>Choose Rock Paper Scissors</h2>";
   
 }
-// vent listeners for choice buttons
+// event listeners for choice buttons
 
 document.getElementById('rock').addEventListener('click', function () {
   gamePlay('rock');
