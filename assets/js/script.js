@@ -158,9 +158,19 @@ function resetGame() {
   choose.innerHTML = "<h2>Choose Rock Paper Scissors</h2>";
 
 }
-// Event listeners for  buttons
+// Event listeners for choice buttons
 
-rockBtn.addEventListener("click", () => gamePlay("rock"));
-paperBtn.addEventListener("click", () => gamePlay("paper"));
-scissorsBtn.addEventListener("click", () => gamePlay("scissors"));
-restartGame.addEventListener("click", resetGame);
+document.getElementById('rock').addEventListener('click', function () {
+  gamePlay('rock');
+});
+document.getElementById('paper').addEventListener('click', function () {
+  gamePlay('paper');
+});
+document.getElementById('scissors').addEventListener('click', function () {
+  gamePlay('scissors');
+});
+
+// Event listener for button to play again 
+document.getElementById("restart-button").addEventListener('click', function () {
+  resetGame();
+});
