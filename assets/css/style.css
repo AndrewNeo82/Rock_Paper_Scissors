@@ -121,7 +121,7 @@ button:hover {
     transform: translate3d(0, 0, 0);
     perspective: 1000px;
 }
-
+/* code for shake affect found online on codepen*/
 @keyframes shake {
 
     10%,
