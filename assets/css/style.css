@@ -25,6 +25,7 @@ body {
     letter-spacing: 2px;
 }
 
+/* Displays the previous pick from both the player and the computer */
 #results {
     display: flex;
     justify-content: center;
@@ -56,6 +57,8 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* Displays a random message after each round and at the end of the game */
+
 #message {
     clear: both;
     color: #adefd1ff;
@@ -69,6 +72,8 @@ body {
     font-weight: 500;
     letter-spacing: 2px;
 }
+
+/* Score board displays the player score and computer score*/
 
 #scores {
     clear: both;
@@ -95,8 +100,10 @@ body {
 #cpu_score {
     margin-top: 10px;
     margin-right: 10%;
-    
+
 }
+
+/* Prompts the player to Choose either rock paper or scissors */
 
 #choose {
     text-align: center;
@@ -110,6 +117,7 @@ body {
     color: #adefd1ff;
 }
 
+/* The buttons to choose rock paper scissors and play the game */
 #buttons {
     display: flex;
     justify-content: center;
@@ -121,6 +129,7 @@ button:hover {
     transform: translate3d(0, 0, 0);
     perspective: 1000px;
 }
+
 /* code for shake affect found online on codepen*/
 @keyframes shake {
 
@@ -157,6 +166,8 @@ button:hover {
     height: 130px;
 }
 
+/* Button to reset the game after the rounds are complete, hidden until the end of the game*/
+
 #restart {
     display: flex;
     justify-content: center;
@@ -171,6 +182,8 @@ button:hover {
     font-weight: 500;
     margin-top: 1%;
 }
+
+/* Media styles for small screens */
 
 @media (max-width: 414px) {
     .header {
@@ -213,16 +226,18 @@ button:hover {
         margin-top: 15px;
         font-size: 16px;
     }
+
     #player_score {
         margin-right: 25%;
         display: block;
     }
-    
+
     .hand {
         width: 100px;
         height: 100px;
         margin-top: 15px;
     }
+
     #choose {
         font-size: 1em;
     }
@@ -231,32 +246,87 @@ button:hover {
         margin-top: 15px;
     }
 }
-@media (max-width: 320px){
+
+@media (max-width: 320px) {
     * {
         max-height: 100vh;
         max-width: 100vw;
     }
+
     .header h1 {
         font-size: 22px;
     }
+
     #scores {
-       margin: auto;    
-       height: 80px;
+        margin: auto;
+        height: 80px;
         width: 300px;
         font-size: 20px;
     }
+
     .last_pick {
         width: 85px;
         height: 85px;
     }
+
     .last_pick p {
         font-size: 15px;
     }
+
     #results {
         flex-direction: row;
     }
+
     .hand {
         width: 80px;
-        height: 80px;    
+        height: 80px;
     }
 }
+
+@media only screen and (min-width: 360px) and (orientation: landscape) {
+    
+    .header h1 {
+        font-size: 22px;
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+
+
+    #message {
+        height: 20px;
+        margin-top: 10px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    #scores {
+        margin: auto;
+        height: 20px;
+        width: 300px;
+        font-size: 11px;
+    }
+
+    .last_pick {
+        width: 85px;
+        height: 85px;
+        font-size: 30px;
+    }
+
+    .last_pick p {
+        font-size: 12px;
+    }
+
+    #results {
+        flex-direction: row;
+    }
+
+    .hand {
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+    }
+    #choose {
+        font-size: 10px;
+    }
+}
+
