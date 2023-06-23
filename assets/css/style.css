@@ -63,7 +63,7 @@ body {
     margin: auto;
     margin-top: 5px;
     width: 400px;
-    height: 50px;
+    height: 40px;
     font-size: 20px;
     border-radius: 3px;
     font-weight: 500;
@@ -90,13 +90,12 @@ body {
 #player_score {
     margin-top: 10px;
     margin-left: 10%;
-    display: block;
 }
 
 #cpu_score {
     margin-top: 10px;
     margin-right: 10%;
-    display: block;
+    
 }
 
 #choose {
@@ -192,7 +191,9 @@ button:hover {
     }
 
     #message {
-        margin-top: 10px;
+        height: 40px;
+        margin-top: 20px;
+        font-size: 16px;
     }
 
     .last_pick {
@@ -206,16 +207,24 @@ button:hover {
     }
 
     #scores {
-        height: 80px;
+        text-align: center;
+        width: 350px;
+        height: 50px;
         margin-top: 15px;
-        font-size: 20px;
+        font-size: 16px;
     }
     #player_score {
         margin-right: 25%;
+        display: block;
     }
     
     .hand {
+        width: 100px;
+        height: 100px;
         margin-top: 15px;
+    }
+    #choose {
+        font-size: 1em;
     }
 
     #restart {
@@ -231,9 +240,9 @@ button:hover {
         font-size: 22px;
     }
     #scores {
-        justify-content: center;
-        height: 80px;
-        width: 100vw;
+       margin: auto;    
+       height: 80px;
+        width: 300px;
         font-size: 20px;
     }
     .last_pick {
@@ -247,7 +256,7 @@ button:hover {
         flex-direction: row;
     }
     .hand {
-        width: 85px;
-        height: 85px;    
+        width: 80px;
+        height: 80px;    
     }
 }
