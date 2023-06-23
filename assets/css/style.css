@@ -13,12 +13,14 @@ body {
     color: #00203fff;
     text-align: left;
     width: 100%;
+    height: 4vh;
 }
 
 .header h1 {
+    margin-top: auto;
     text-align: center;
     color: #adefd1ff;
-    font-size: 40px;
+    font-size: 2rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
     text-transform: capitalize;
@@ -28,6 +30,7 @@ body {
 /* Displays the previous pick from both the player and the computer */
 
 #results {
+    margin-top: 5px;
     display: flex;
     justify-content: center;
 }
@@ -68,6 +71,7 @@ body {
     text-align: center;
     margin: auto;
     margin-top: 5px;
+    margin-bottom: 20px;
     width: 400px;
     height: 40px;
     font-size: 20px;
@@ -81,9 +85,10 @@ body {
 #scores {
     clear: both;
     color: #adefd1ff;
+    display: flex;
+    justify-content: space-around;  
     text-align: center;
     margin: auto;
-    margin-top: 10px;
     width: 400px;
     height: 40px;
     border: 2px solid #adefd1ff;
@@ -94,6 +99,7 @@ body {
 }
 
 #player_score {
+    
     margin-top: 10px;
     margin-left: 10%;
 }
@@ -157,12 +163,13 @@ button:hover {
 /* the rock paper scissors buttons */
 
 .hand {
+    margin: 10px 20px;
+    justify-content: center;
     background-color: grey;
     border-radius: 50%;
     border: 10px solid #adefd1ff;
     font-size: 50px;
     color: black;
-    margin: 1% 2%;
     width: 130px;
     height: 130px;
 }
@@ -223,7 +230,7 @@ button:hover {
         text-align: center;
         width: 350px;
         height: 50px;
-        margin-top: 15px;
+        margin: 10px 25px;
         font-size: 16px;
     }
 
@@ -233,6 +240,7 @@ button:hover {
     }
 
     .hand {
+        justify-content: space-around;
         width: 100px;
         height: 100px;
         margin-top: 15px;
@@ -280,6 +288,8 @@ button:hover {
     }
 
     .hand {
+        margin: auto;
+        justify-content: space-around;
         width: 80px;
         height: 80px;
     }
