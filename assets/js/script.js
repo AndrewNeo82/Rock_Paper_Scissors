@@ -9,11 +9,11 @@ const choicesMap = {
 
 // Get Dom Elements
 
-const playerPick = document.getElementById("player_choice");
-const computerPick = document.getElementById("cpu_choice");
-const yourScore = document.getElementById("player_score");
-const cpuScore = document.getElementById("cpu_score");
-const restartGame = document.getElementById("restart_button");
+const playerPick = document.getElementById("player-choice");
+const computerPick = document.getElementById("cpu-choice");
+const yourScore = document.getElementById("player-score");
+const cpuScore = document.getElementById("cpu-score");
+const restartGame = document.getElementById("restart-button");
 const rockBtn = document.getElementById("rock");
 const paperBtn = document.getElementById("paper");
 const scissorsBtn = document.getElementById("scissors");
@@ -173,6 +173,6 @@ document.getElementById('scissors').addEventListener('click', function () {
 });
 
 // Event listener for button to play again 
-document.getElementById("restart_button").addEventListener('click', function () {
+document.getElementById("restart-button").addEventListener('click', function () {
   resetGame();
 });

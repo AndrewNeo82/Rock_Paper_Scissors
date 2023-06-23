@@ -35,7 +35,7 @@ body {
     justify-content: center;
 }
 
-.last_pick {
+.last-pick {
     background-color: grey;
     margin: 2%;
     border-radius: 50%;
@@ -51,7 +51,7 @@ body {
 
 /* ensures the icons stays in the center of the last pick display */
 
-.last_pick p {
+.last-pick p {
     text-align: center;
     color: #00203fff;
     font-size: 20px;
@@ -98,13 +98,13 @@ body {
     position: relative;
 }
 
-#player_score {
+#player-score {
     
     margin-top: 10px;
     margin-left: 10%;
 }
 
-#cpu_score {
+#cpu-score {
     margin-top: 10px;
     margin-right: 10%;
 }
@@ -164,7 +164,7 @@ button:hover {
 
 .hand {
     margin: 10px 20px;
-    justify-content: center;
+    justify-content: space-around;
     background-color: grey;
     border-radius: 50%;
     border: 10px solid #adefd1ff;
@@ -216,7 +216,7 @@ button:hover {
         font-size: 16px;
     }
 
-    .last_pick {
+    .last-pick {
         font-size: 50px;
         justify-content: center;
         width: 120px;
@@ -234,7 +234,7 @@ button:hover {
         font-size: 16px;
     }
 
-    #player_score {
+    #player-score {
         margin-right: 25%;
         display: block;
     }
@@ -274,12 +274,12 @@ button:hover {
         font-size: 20px;
     }
 
-    .last_pick {
+    .last-pick {
         width: 85px;
         height: 85px;
     }
 
-    .last_pick p {
+    .last-pick p {
         font-size: 15px;
     }
 
@@ -318,13 +318,13 @@ button:hover {
         font-size: 11px;
     }
 
-    .last_pick {
+    .last-pick {
         width: 85px;
         height: 85px;
         font-size: 30px;
     }
 
-    .last_pick p {
+    .last-pick p {
         font-size: 12px;
     }
 
