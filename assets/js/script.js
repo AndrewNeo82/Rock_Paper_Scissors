@@ -25,7 +25,6 @@ let computerScore = 0;
 
 // Function to handle computer choice
 function computerTurn() {
-  const choices = ["rock", "paper", "scissors"];
   let cTurn = Math.floor(Math.random() * choices.length);
   computerPick.innerHTML = choicesMap[choices[cTurn]];
   return choices[cTurn];
