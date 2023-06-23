@@ -74,23 +74,23 @@ function gamePlay(playerChoice) {
   playerPick.innerHTML = choicesMap[playerChoice];
 
   if (playerChoice === computerChoice) {
-    draw()
+    handleDraw()
   } else if (
     (playerChoice === "rock" && computerChoice === "scissors") ||
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")
   ) {
-    winner()
+    handleWin()
 
   } else {
-    loser()
+    handleLoss()
   }
   endGame()
 }
 
 /* Function called when the player wins the round,  displays a message increments player 
 score and changes the border of the last pick display */
-function winner() {
+function handleWin() {
   const winMessage = pickMessage();
   message.textContent = winMessage;
   playerScore++;
@@ -101,7 +101,7 @@ function winner() {
 /* Function called when the player loses the round,  displays a message increments computer 
 score and changes the border of the last pick display. */
 
-function loser() {
+function handleLoss() {
   const loseMessage = pickLoseMessage();
   message.textContent = loseMessage;
   computerScore++;
@@ -112,7 +112,7 @@ function loser() {
 
 // Function called when the round is  a draw, displays a message and changed border of last pick.
 
-function draw() {
+function handleDraw() {
   message.textContent = "A Draw! Everybody Loses!";
   playerPick.style.borderColor = "black";
   computerPick.style.borderColor = "black";
@@ -120,7 +120,6 @@ function draw() {
 
 /* Check if score of 5 has been reached and if it has ends the game 
 hides the choice buttons displays the message game over and shows the reset button */
-
 
 function endGame() {
   if (playerScore === 5) {
