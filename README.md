@@ -22,9 +22,9 @@ I created a web app for the game rock paper scissors for my second milestone pro
 
 ### Review page
 
-The review page contains one of the reviews of the film which was written by Mark Bartlett for Britflicks website along with a video of interviews with three of the cast members also for Britflicks website.=, the heading here links to the review on the britflicks website.
 
-![review](https://user-images.githubusercontent.com/90483176/230976665-cc7dd213-f5ab-49f9-b1c1-3f0b5c8b356f.jpg)
+
+![review]
 
 
 ### Footer
@@ -35,10 +35,11 @@ The footer contains links to all the films social media (Twitter, Facebook) as w
 
 * I tested the site worked in different browswers, eg Firefox, Edge and Chrome.
 
-* I confirmed the site is responsive and works on all device types, i found the font I chose for the logo reverts to the secondary choice on some browsers and devices.
+* I confirmed the site is responsive and works on all device types and in both portrait and landscape on mobile devices.
 
 * I confirmed the links to outside sites are all correct and in working order.
-* I confirmed that the videos play as intended and the user has control over when the videos play and can open them in full screen.
+
+* The buttons shake as intended on all device types and rapid pressing of the ssame button in succession will not break the game or affect the game counting of the score.
 
 ## Bugs
 
@@ -54,31 +55,18 @@ I realised when i had copy pasted the code from my Win message function i had ne
 
 ### HTML
 
-I ran the code through the W3C checker and found the following error Error: Stray end tag i.From line 66, column 210; to line 66, column 213 526;"></i></i></a>
-
-I solved this by deleting this tag.
+The site passes through the HTML checker with no warnings or errors.
 
 ### CSS
 
-* I ran the code through the W3C CSS Validator and found the following error 213	#photos	wrap is not a flex value : wrap
-
-I solved this by changing  flex: wrap ; to flex-wrap: wrap;
-
-* 320	.trailer iframe	Value Error : width only 0 can be a unit. You must put a unit after your number : 512
-
-I solved this by adding the unit "px" 
-
-http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fandrewneo82.github.io%2Fsmoking-guns%2F&usermedium=all&vextwarning=&warning=1
-
-
-
+* I ran the code through the W3C CSS Validator and it passes with no errors or warnings.
 
 
 ### Accessability
 
 Running lighthouse confirmed that the colours and fonts were accesible and easy to read.
 
-![lighthouse](https://user-images.githubusercontent.com/90483176/230979099-94499596-9d77-488c-9017-8c5bad418156.jpg)
+![lighthouse] ![Alt text](assets/images/lighthouse.jpg)
 
 ## Deployment
 The site was deployed to github pages. The steps to depoloy were as follows.
