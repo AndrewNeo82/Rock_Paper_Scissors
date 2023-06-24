@@ -13,6 +13,11 @@ Scissors beat paper (scissors cut paper).
 Paper beats rock (paper covers rock).
 When both players have made their choices, they reveal their hand gestures at the same time. The winning gesture is determined by the rules above. If both players make the same gesture, it's a tie, and the game can be played again. The game would be of interest to anyone who wants to play Rock, paper Scissors.
 
+# Technologies used
+* HTML
+* CSS
+* JAVASCRIPT
+
 ## Features 
 
 ![rpsScreenshot](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/c24d3e27-65af-4f29-901e-516692634ff0)
