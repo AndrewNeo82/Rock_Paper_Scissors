@@ -29,8 +29,7 @@ When both players have made their choices, they reveal their hand gestures at th
 
 * The last pick display shows either a red of green border depending on whether the player or the computer won the round.
   
-![win](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/e0a3cb0d-f43d-4ff7-9dd3-c01f47bc53bd) ![loss](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/59007e64-d3c7-4f08-a049-aa983adfdef4)
-
+![win](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/e0a3cb0d-f43d-4ff7-9dd3-c01f47bc53bd)
   ### Message 
 
 * The message section will display one from a choice of messages depening on whether the player won or lost the round or if it was a draw.
