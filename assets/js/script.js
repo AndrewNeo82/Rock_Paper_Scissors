@@ -17,8 +17,8 @@ const restartGame = document.getElementById("restart-button");
 const rockBtn = document.getElementById("rock");
 const paperBtn = document.getElementById("paper");
 const scissorsBtn = document.getElementById("scissors");
-const message = document.getElementById("message")
-const choose = document.getElementById("choose")
+const message = document.getElementById("message");
+const choose = document.getElementById("choose");
 
 let playerScore = 0;
 let computerScore = 0;
@@ -75,18 +75,18 @@ function gamePlay(playerChoice) {
   playerPick.innerHTML = choicesMap[playerChoice];
 
   if (playerChoice === computerChoice) {
-    handleDraw()
+    handleDraw();
   } else if (
     (playerChoice === "rock" && computerChoice === "scissors") ||
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")
   ) {
-    handleWin()
+    handleWin();
 
   } else {
-    handleLoss()
+    handleLoss();
   }
-  endGame()
+  endGame();
 }
 
 /* Function called when the player wins the round,  displays a message increments player 
@@ -136,13 +136,13 @@ function endGame() {
     message.innerHTML = "Congratulations, you Won! Somewhere theres Fireworks";
     restartGame.style.display = "block";
     choose.innerHTML = "<p>Game Over!</p>";
-    disableButtons ()
+    disableButtons ();
 
   } else if (computerScore === 5) {
     message.innerHTML = "Disaster strikes, you lost! Play again you can do it!";
     restartGame.style.display = "block";
     choose.innerHTML = "<p>Game Over!</p>";
-    disableButtons ()
+    disableButtons ();
   }
   
 }
