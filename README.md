@@ -2,8 +2,7 @@
 
 I created a web app for the game rock paper scissors for my second milestone project.
 
-![responsive](https://user-images.githubusercontent.com/90483176/231429240-5adf36cc-c594-4e7f-b0bb-5366567dccb1.png)
-
+![responsive] ![Alt text](responsive.jpg)
 
 ## Features.
 
