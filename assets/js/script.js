@@ -127,7 +127,7 @@ function endGame() {
     paperBtn.style.display = "none";
     scissorsBtn.style.display = "none";
     restartGame.style.display = "block";
-    choose.innerHTML = "<h2>Game Over!</h2>";
+    choose.innerHTML = "<p>Game Over!</p>";
 
   } else if (computerScore === 5) {
     message.innerHTML = "Disaster strikes, you lost! Play again you can do it!";
@@ -135,7 +135,7 @@ function endGame() {
     paperBtn.style.display = "none";
     scissorsBtn.style.display = "none";
     restartGame.style.display = "block";
-    choose.innerHTML = "<h2>Game Over!</h2>";
+    choose.innerHTML = "<p>Game Over!</p>";
   }
 }
 
@@ -155,7 +155,7 @@ function resetGame() {
   scissorsBtn.style.display = "block";
   restartGame.style.display = "none";
   message.textContent = "Rock Beats Scissors Beats Paper Beats Rock";
-  choose.innerHTML = "<h2>Choose Rock Paper Scissors</h2>";
+  choose.innerHTML = "<p>Choose Rock Paper Scissors</p>";
 
 }
 // Event listeners for choice buttons
