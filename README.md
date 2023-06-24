@@ -12,10 +12,11 @@ Scissors beat paper (scissors cut paper).
 Paper beats rock (paper covers rock).
 When both players have made their choices, they reveal their hand gestures at the same time. The winning gesture is determined by the rules above. If both players make the same gesture, it's a tie, and the game can be played again.
 
-![responsive] ![Alt text](responsive.jpg)
+ (responsive.jpg)
 
-## Features.
-
+## Features.!
+![Alt text](assets/images/loss.jpg)![Alt text](assets/images/over.jpg)
+![Alt text](assets/images/win.jpg)![Alt text](assets/images/rpsScreenshot.jpg)
 ### Navigation.
 
 * 
@@ -24,22 +25,8 @@ When both players have made their choices, they reveal their hand gestures at th
 
 * 
 
-![front](https://user-images.githubusercontent.com/90483176/230976497-e7a686c0-8b4f-4a4b-82b1-63cb0cafb11b.jpg)
+ (assets/images/rpsScreenshot.jpg)
 
-
-### Media Page
-
-
-### Review page
-
-
-
-![review]
-
-
-### Footer
-
-The footer contains links to all the films social media (Twitter, Facebook) as well as the IMDB page.
 
 ## Testing
 
