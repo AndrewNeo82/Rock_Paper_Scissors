@@ -22,6 +22,13 @@ When both players have made their choices, they reveal their hand gestures at th
 
 ![rpsScreenshot](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/c24d3e27-65af-4f29-901e-516692634ff0)
 
+### Choice Buttons
+
+* There are three buttons to make your selection, each button shakes and lights up when selected to give the user some feedback to their actions and enhance the user experience, the shake also simulates the act of playing in real life.
+
+![button](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/acf25b46-ec2f-4b3c-8c06-bf8a5f056191)
+
+
 
 ### Previous Selection
 
