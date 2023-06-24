@@ -24,6 +24,7 @@ let playerScore = 0;
 let computerScore = 0;
 
 // Function to handle computer choice
+
 function computerTurn() {
   let cTurn = Math.floor(Math.random() * choices.length);
   computerPick.innerHTML = choicesMap[choices[cTurn]];
@@ -31,6 +32,7 @@ function computerTurn() {
 }
 
 // Function to handle choice of win messages 
+
 function pickMessage() {
   const winMessages = [
     "Congratulations! You won!",
@@ -89,6 +91,7 @@ function gamePlay(playerChoice) {
 
 /* Function called when the player wins the round,  displays a message increments player 
 score and changes the border of the last pick display */
+
 function handleWin() {
   const winMessage = pickMessage();
   message.textContent = winMessage;
@@ -117,26 +120,31 @@ function handleDraw() {
   computerPick.style.borderColor = "black";
 }
 
+// Disables the choice buttons 
+
+function disableButtons (){
+  rockBtn.style.display = "none";
+    paperBtn.style.display = "none";
+    scissorsBtn.style.display = "none";
+}
+
 /* Check if score of 5 has been reached and if it has ends the game 
 hides the choice buttons displays the message game over and shows the reset button */
 
 function endGame() {
   if (playerScore === 5) {
     message.innerHTML = "Congratulations, you Won! Somewhere theres Fireworks";
-    rockBtn.style.display = "none";
-    paperBtn.style.display = "none";
-    scissorsBtn.style.display = "none";
     restartGame.style.display = "block";
     choose.innerHTML = "<p>Game Over!</p>";
+    disableButtons ()
 
   } else if (computerScore === 5) {
     message.innerHTML = "Disaster strikes, you lost! Play again you can do it!";
-    rockBtn.style.display = "none";
-    paperBtn.style.display = "none";
-    scissorsBtn.style.display = "none";
     restartGame.style.display = "block";
     choose.innerHTML = "<p>Game Over!</p>";
+    disableButtons ()
   }
+  
 }
 
 // Function to reset the game, when the reset button is clicked the game is restored to its default values
@@ -171,6 +179,7 @@ document.getElementById('scissors').addEventListener('click', function () {
 });
 
 // Event listener for button to play again 
+
 document.getElementById("restart-button").addEventListener('click', function () {
   resetGame();
 });
