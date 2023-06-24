@@ -75,6 +75,8 @@ I realised when i had copy pasted the code from my Win message function i had ne
 
 ### Javascript 
 
+* The code passes through JShint and there are no errors or warnings.
+
 
 ### Accessability
 
