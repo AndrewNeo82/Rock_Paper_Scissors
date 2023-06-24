@@ -87,7 +87,7 @@ The site was deployed to github pages. The steps to depoloy were as follows.
 
 * In the Github repository navigate to the settings tab.
 * From the source section drop-down menu, select the Main Branch.
-* deploy from branch.
+* Deploy from branch.
 
 
 The live link can be found here https://andrewneo82.github.io/Rock_Paper_Scissors/
@@ -96,7 +96,7 @@ The live link can be found here https://andrewneo82.github.io/Rock_Paper_Scissor
 
 ### Content
 
-* The code to make the buttons shake to simulate the shaking of a fist while playing rock paper scissors was taken from codepen.io.
+* The code to make the buttons shake to simulate the shaking of a fist while playing rock paper scissors was taken from https://css-tricks.com/snippets/css/shake-css-keyframe-animation/.
 
 ## Media
 
