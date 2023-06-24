@@ -1,6 +1,16 @@
 # Rock Paper scissors
 
-I created a web app for the game rock paper scissors for my second milestone project.
+I created a web app for the game rock paper scissors for my second milestone project. Rock, Paper, Scissors is a hand game typically played between two people. It's a simple game used to make a decision or settle a dispute. Each player simultaneously forms one of three shapes with their hand:
+
+Rock: The player forms a fist with their hand.
+Paper: The player extends their hand flat, with the palm facing down.
+Scissors: The player extends their hand with the index and middle fingers extended and spread apart, resembling a pair of scissors.
+The basic rules of Rock, Paper, Scissors are as follows:
+
+Rock beats scissors (rock smashes scissors).
+Scissors beat paper (scissors cut paper).
+Paper beats rock (paper covers rock).
+When both players have made their choices, they reveal their hand gestures at the same time. The winning gesture is determined by the rules above. If both players make the same gesture, it's a tie, and the game can be played again.
 
 ![responsive] ![Alt text](responsive.jpg)
 
