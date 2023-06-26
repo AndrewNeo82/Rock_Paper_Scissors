@@ -78,6 +78,7 @@ body {
 /* Displays a random message after each round and at the end of the game */
 
 #message {
+    font-family: RocketRacer-MVlep, Arial, Helvetica, sans-serif;
     clear: both;
     color: #adefd1ff;
     text-align: center;
@@ -103,8 +104,8 @@ body {
     text-align: center;
     margin: auto;
     width: 400px;
-    height: 40px;
-    border: 2px solid #adefd1ff;
+    height: 45px;
+    border: 2px dotted #adefd1ff;
     border-radius: 3px;
     font-weight: 500;
     letter-spacing: 2px;
