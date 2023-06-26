@@ -133,13 +133,13 @@ hides the choice buttons displays the message game over and shows the reset butt
 
 function endGame() {
   if (playerScore === 5) {
-    message.innerHTML = "Congratulations, you Won! Somewhere theres Fireworks";
+    message.innerHTML = "Congratulations, you Won!";
     restartGame.style.display = "block";
     choose.innerHTML = "<p>Game Over!</p>";
     disableButtons ();
 
   } else if (computerScore === 5) {
-    message.innerHTML = "Disaster strikes, you lost! Play again you can do it!";
+    message.innerHTML = "Disaster strikes, you lost!";
     restartGame.style.display = "block";
     choose.innerHTML = "<p>Game Over!</p>";
     disableButtons ();
