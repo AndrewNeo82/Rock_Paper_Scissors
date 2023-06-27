@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway+Dots&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Codystar&family=Press+Start+2P&display=swap');
 
 
 * {
@@ -87,8 +88,8 @@ body {
 /* Score board displays the player score and computer score*/
 
 #scores {
-    font-size: 1.1rem;
-    font-family: 'Raleway Dots', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    font-family: 'Codystar', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     clear: both;
     color: #adefd1ff;
     display: flex;
@@ -99,7 +100,7 @@ body {
     height: 50Spx;
     border: 2px dotted #adefd1ff;
     border-radius: 3px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     position: relative;
 }
 
