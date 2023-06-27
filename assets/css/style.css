@@ -48,7 +48,7 @@ body {
     align-items: center;
     width: 200px;
     height: 200px;
-    border: 15px solid #adefd1ff;
+    border: 10px solid #adefd1ff;
     font-size: 100px;
     position: relative;
 }
@@ -90,6 +90,7 @@ body {
 #scores {
     font-size: 1rem;
     font-family: 'Codystar', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
     clear: both;
     color: #adefd1ff;
     display: flex;
@@ -98,7 +99,7 @@ body {
     margin: auto;
     width: 400px;
     height: 50px;
-    border: 2px dotted #adefd1ff;
+    border: 5px dotted #adefd1ff;
     border-radius: 3px;
     letter-spacing: 1px;
     position: relative;
@@ -125,7 +126,7 @@ body {
 #choose p {
     font-family: 'Press Start 2P', nineteen_ninety_sevenregular, Arial, Helvetica, sans-serif;
     margin-top: 5px;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: 2px;
     color: #adefd1ff;
 }
