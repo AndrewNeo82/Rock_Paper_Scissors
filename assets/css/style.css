@@ -1,15 +1,5 @@
-@font-face {
-    font-family: 'Score Board';
-    src: url('/assets/css/fonts/ScoreBoard.eot');
-    src: url('/assets/css/fonts/ScoreBoard.eot') format('embedded-opentype'),
-        url('/assets/css/fonts/ScoreBoard.woff2') format('woff2'),
-        url('/assets/css/fonts/ScoreBoard.woff') format('woff'),
-        url('/assets/css/fonts/ScoreBoard.ttf') format('truetype'),
-        url('ScoreBoard.svg#ScoreBoard') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway+Dots&display=swap');
 
 
 * {
@@ -79,7 +69,7 @@ body {
 /* Displays a random message after each round and at the end of the game */
 
 #message {
-    font-family: nineteen_ninety_sevenregular, Arial, Helvetica, sans-serif;
+    font-family:'Press Start 2P', nineteen_ninety_sevenregular, Arial, Helvetica, sans-serif;
     clear: both;
     color: #adefd1ff;
     text-align: center;
@@ -97,7 +87,8 @@ body {
 /* Score board displays the player score and computer score*/
 
 #scores {
-    font-family: 'Score Board', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1rem;
+    font-family: 'Raleway Dots', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     clear: both;
     color: #adefd1ff;
     display: flex;
@@ -105,10 +96,9 @@ body {
     text-align: center;
     margin: auto;
     width: 400px;
-    height: 45px;
+    height: 50Spx;
     border: 2px dotted #adefd1ff;
     border-radius: 3px;
-    font-weight: 500;
     letter-spacing: 2px;
     position: relative;
 }
@@ -132,9 +122,9 @@ body {
 }
 
 #choose p {
-    font-family: nineteen_ninety_sevenregular, Arial, Helvetica, sans-serif;
+    font-family: 'Press Start 2P', nineteen_ninety_sevenregular, Arial, Helvetica, sans-serif;
     margin-top: 5px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 2px;
     color: #adefd1ff;
 }
