@@ -5,6 +5,9 @@
 
 * {
     margin: 0;
+    font-size: calc(15px + 0.390625vw);
+
+    
 
 }
 
@@ -24,7 +27,7 @@ body {
     margin-top: 10px;
     text-align: center;
     color: #adefd1ff;
-    font-size: 2rem;
+    font-size: 2rem ;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
     text-transform: capitalize;
@@ -58,13 +61,16 @@ body {
 .last-pick p {
     text-align: center;
     color: #00203fff;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 800;
     letter-spacing: 2px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.last-pick i {
+    font-size: 90%;
 }
 
 /* Displays a random message after each round and at the end of the game */
@@ -177,10 +183,12 @@ button:hover {
     background-color: grey;
     border-radius: 50%;
     border: 10px solid #adefd1ff;
-    font-size: 50px;
     color: black;
     width: 130px;
     height: 130px;
+}
+.hand i {
+    font-size: 1.9rem;
 }
 
 /* Button to reset the game after the rounds are complete, hidden until the end of the game */
@@ -228,7 +236,7 @@ button:hover {
     .last-pick {
         font-size: 50px;
         justify-content: center;
-        width: 120px;
+        width: 35%;
         height: 120px;
         margin: auto;
         margin-top: 15px;
