@@ -61,8 +61,9 @@ When both players have made their choices, they reveal their hand gestures at th
 * I tested the game worked on PC and mobile devices, testing both android and Iphone.
 
 * I confirmed the site is responsive and works on all device types and in both portrait and landscape on mobile devices.
+  
+![Screenshot 2023-07-03 163605](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/a5432ba1-c86c-4b0b-84d5-7a359c5ff54f)
 
- ![responsive](https://github.com/AndrewNeo82/Rock_Paper_Scissors/assets/90483176/743d07da-4329-44c3-a463-00e933eb91cc)
 
 * The buttons shake as intended on all device types and rapid pressing of the ssame button in succession will not break the game or affect the game counting of the score.
 
