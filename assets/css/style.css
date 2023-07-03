@@ -60,7 +60,7 @@ body {
 .last-pick p {
     text-align: center;
     color: #00203fff;
-    font-size: 1.3rem;
+    font-size: 18px;
     font-weight: 800;
     letter-spacing: 2px;
     position: absolute;
@@ -228,9 +228,10 @@ button:hover {
     }
 
     #message {
-        height: 40px;
-        margin-top: 20px;
-        font-size: 14px;
+        width: 370px;
+        height: 15px;
+        margin-top: 10px;
+        font-size: 12px;
         }
 
     .last-pick {
@@ -239,7 +240,7 @@ button:hover {
         width: 35%;
         height: 120px;
         margin: auto;
-        margin-top: 15px;
+        margin-top: 10px;
         padding: 10px;
     }
 
@@ -247,7 +248,6 @@ button:hover {
         text-align: center;
         width: 350px;
         height: 50px;
-        margin: 10px 25px;
         font-size: 0.9rem;
     }
 
@@ -260,11 +260,11 @@ button:hover {
         justify-content: space-around;
         width: 100px;
         height: 100px;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     #choose p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     #restart {
@@ -292,6 +292,7 @@ button:hover {
         font-size: 14px;
     }
     #message {
+        width: 300px;
         font-size: 12px;
     }
 
