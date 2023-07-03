@@ -230,8 +230,8 @@ button:hover {
     #message {
         height: 40px;
         margin-top: 20px;
-        font-size: 16px;
-    }
+        font-size: 14px;
+        }
 
     .last-pick {
         font-size: 50px;
@@ -264,7 +264,7 @@ button:hover {
     }
 
     #choose p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     #restart {
@@ -291,6 +291,9 @@ button:hover {
         width: 300px;
         font-size: 14px;
     }
+    #message {
+        font-size: 12px;
+    }
 
     .last-pick {
         width: 85px;
@@ -309,7 +312,7 @@ button:hover {
     }
 
     #choose p {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
