@@ -210,13 +210,13 @@ button:hover {
 
 /* Media styles for mobile devices */
 
-@media (max-width: 414px) {
+@media (max-width: 426px) {
     .header {
         height: 3vh;
     }
 
     .header h1 {
-        font-size: 24px;
+        font-size: 18px;
         text-align: center;
         letter-spacing: 2px;
         font-weight: 500;
