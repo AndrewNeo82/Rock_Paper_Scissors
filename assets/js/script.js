@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function() {
+
 // Choices and choice Map
 
 const choices = ["rock", "paper", "scissors"];
@@ -214,4 +216,4 @@ document.querySelectorAll(".hand").forEach((element) => {
 // Event listener for the button to play again
 
 restartGame.addEventListener("click", resetGame);
-
+})

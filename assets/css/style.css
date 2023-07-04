@@ -5,9 +5,6 @@
 
 * {
     margin: 0;
-
-    
-
 }
 
 body {
@@ -26,7 +23,8 @@ body {
     margin-top: 10px;
     text-align: center;
     color: #adefd1ff;
-    font-size: calc(26px + 0.390625vw);    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: calc(26px + 0.390625vw);    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
     text-transform: capitalize;
     letter-spacing: 2px;
@@ -54,7 +52,7 @@ body {
     position: relative;
 }
 
-/* ensures the icons stays in the center of the last pick display */
+/* position the iconin the center of the last pick display */
 
 .last-pick p {
     text-align: center;
@@ -143,6 +141,8 @@ body {
     color: #00203fff;
 }
 
+/* shake affect on hover on desktop and on press on mobile */
+
 button:hover {
     background-color: #adefd1ff;
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
@@ -152,6 +152,7 @@ button:hover {
 }
 
 /* code for shake affect found online on codepen (added shake to simulate playing the game in real life */
+
 @keyframes shake {
 
     10%,
