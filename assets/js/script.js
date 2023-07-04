@@ -125,6 +125,7 @@ function handleDraw() {
   message.textContent = "A Draw! Everybody Loses!";
   playerPick.style.borderColor = "black";
   computerPick.style.borderColor = "black";
+  checkIfGameEnd();
 }
 
 // Disables the choice buttons 
