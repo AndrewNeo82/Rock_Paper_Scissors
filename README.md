@@ -75,7 +75,7 @@ When both players have made their choices, they reveal their hand gestures at th
 
 I realised when i had copy pasted the code from my Win message function i had neglected to change "const winMessage = winMessages[winIndex];" to loseMessages[loseIndex];. Once i made this change the function worked as intended.
 
-* The player choice would occasionally return undefined error in the console
+* The player choice would occasionally return undefined error in the console and fail to display the player last pick.
 
 I solved this by changing "const playerChoice = event.target.dataset.choice;" in the gamePlay function to "const playerChoice = this.dataset.choice;"
 
