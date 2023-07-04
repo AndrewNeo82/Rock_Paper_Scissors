@@ -133,10 +133,18 @@ function disableButtons (){
   rockBtn.style.display = "none";
     paperBtn.style.display = "none";
     scissorsBtn.style.display = "none";
+
 }
 
-/* Check if score of 5 has been reached and if it has ends the game 
-hides the choice buttons displays the message game over and shows the reset button */
+// Function to check if the game has ended
+
+function checkIfGameEnd() {
+  if (playerScore === MAX_MOVES || computerScore === MAX_MOVES) {
+    endGame();
+  }
+}
+
+// ends the game
 
 function endGame() {
   restartGame.style.display = "block";
