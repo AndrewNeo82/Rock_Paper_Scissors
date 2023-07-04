@@ -87,8 +87,7 @@ I solved this by changing "const playerChoice = event.target.dataset.choice;" in
 
 ### CSS
 
-* I ran the code through the W3C CSS Validator and it passes with no errors or warnings. [Jigsaw Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fandrewneo82.github.io%2FRock_Paper_Scissors%2F)
-
+* I ran the code through the W3C CSS Validator and it passes with no errors or warnings. [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fandrewneo82.github.io%2FRock_Paper_Scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 ### Javascript 
 
 * The code passes through JShint and there are no errors or warnings.
