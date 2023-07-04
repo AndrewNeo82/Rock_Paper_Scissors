@@ -1,6 +1,7 @@
-// Choices
+// Choices and choice Map
 
 const choices = ["rock", "paper", "scissors"];
+
 const choicesMap = {
   rock: '<i class="fa-solid fa-hand-back-fist"></i>',
   paper: '<i class="fa-solid fa-hand"></i>',
@@ -20,7 +21,7 @@ const scissorsBtn = document.getElementById("scissors");
 const message = document.getElementById("message");
 const choose = document.getElementById("choose");
 
-// Messages to display after each round 
+// Messages to display after each round depending on the result
 
 const WIN_MESSAGES = [
   "Congratulations! You won!",
@@ -39,6 +40,7 @@ const LOSE_MESSAGES = [
   "Oh No, You Lost 😞"
 ];
 
+// Maximum score reached before game ends
 const MAX_MOVES = 5;
 
 let playerScore = 0;
@@ -53,9 +55,9 @@ function computerTurn() {
   return computerChoice;
 }
 
-// Main game play  
+//  
 
- function gamePlay(event) {
+function gamePlay(event) {
   const playerChoice = this.dataset.choice;
   const computerChoice = computerTurn();
   renderChoice(true, playerChoice);
@@ -147,11 +149,20 @@ function handleDraw() {
 
 // Disables the choice buttons 
 
-function disableButtons (){
+function disableButtons() {
   rockBtn.style.display = "none";
-    paperBtn.style.display = "none";
-    scissorsBtn.style.display = "none";
+  paperBtn.style.display = "none";
+  scissorsBtn.style.display = "none";
 
+}
+
+// enables the choice buttons and hides the reset button
+
+function enableButtons() {
+  rockBtn.style.display = "block";
+  paperBtn.style.display = "block";
+  scissorsBtn.style.display = "block";
+  restartGame.style.display = "none";
 }
 
 // Function to check if the game has ended if either player or computer reaches score of five
@@ -188,12 +199,9 @@ function resetGame() {
   computerPick.innerHTML = "<p>Computer Pick</p>";
   yourScore.textContent = "Player Score: " + playerScore;
   cpuScore.textContent = "Computer Score: " + computerScore;
-  rockBtn.style.display = "block";
-  paperBtn.style.display = "block";
-  scissorsBtn.style.display = "block";
-  restartGame.style.display = "none";
   message.textContent = "Rock Beats Scissors Beats Paper Beats Rock";
   choose.innerHTML = "<p>Choose Rock Paper Scissors</p>";
+  enableButtons();
 
 }
 
@@ -206,3 +214,4 @@ document.querySelectorAll(".hand").forEach((element) => {
 // Event listener for the button to play again
 
 restartGame.addEventListener("click", resetGame);
+
