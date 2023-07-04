@@ -26,8 +26,7 @@ body {
     margin-top: 10px;
     text-align: center;
     color: #adefd1ff;
-    font-size: 2rem ;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: calc(26px + 0.390625vw);    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
     text-transform: capitalize;
     letter-spacing: 2px;
