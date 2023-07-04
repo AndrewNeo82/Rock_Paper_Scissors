@@ -80,6 +80,22 @@ function renderChoice(isPlayer, choice) {
   checkIfGameEnd();
 }
 
+// Checks for the result of the round
+
+function checkMoveResult(playerChoice, computerChoice) {
+  if (playerChoice === computerChoice) {
+    return "draw";
+  } else if (
+    (playerChoice === "rock" && computerChoice === "scissors") ||
+    (playerChoice === "paper" && computerChoice === "rock") ||
+    (playerChoice === "scissors" && computerChoice === "paper")
+  ) {
+    return "win";
+  } else {
+    return "lose";
+  }
+}
+
 /* Function called when the player wins the round,  displays a message increments player 
 score and changes the border of the last pick display */
 
@@ -123,19 +139,16 @@ function disableButtons (){
 hides the choice buttons displays the message game over and shows the reset button */
 
 function endGame() {
-  if (playerScore === 5) {
-    message.innerHTML = "Congratulations, you Won!";
-    restartGame.style.display = "block";
-    choose.innerHTML = "<p>Game Over!</p>";
-    disableButtons ();
-
-  } else if (computerScore === 5) {
-    message.innerHTML = "Disaster strikes, you lost!";
-    restartGame.style.display = "block";
-    choose.innerHTML = "<p>Game Over!</p>";
-    disableButtons ();
+  restartGame.style.display = "block";
+  disableButtons();
+  let gameResultMessage;
+  if (playerScore === MAX_MOVES) {
+    gameResultMessage = "Congratulations! You won the game!";
+  } else {
+    gameResultMessage = "Disaster strikes The computer Won!";
   }
-  
+  message.textContent = gameResultMessage;
+  choose.innerHTML = "<p>Game Over!</p>";
 }
 
 // Function to reset the game, when the reset button is clicked the game is restored to its default values
@@ -157,20 +170,13 @@ function resetGame() {
   choose.innerHTML = "<p>Choose Rock Paper Scissors</p>";
 
 }
+
 // Event listeners for choice buttons
 
-document.getElementById('rock').addEventListener('click', function () {
-  gamePlay('rock');
-});
-document.getElementById('paper').addEventListener('click', function () {
-  gamePlay('paper');
-});
-document.getElementById('scissors').addEventListener('click', function () {
-  gamePlay('scissors');
+document.querySelectorAll(".hand").forEach((element) => {
+  element.addEventListener("click", gamePlay);
 });
 
-// Event listener for button to play again 
+// Event listener for the button to play again
 
-document.getElementById("restart-button").addEventListener('click', function () {
-  resetGame();
-});
+restartGame.addEventListener("click", resetGame);
