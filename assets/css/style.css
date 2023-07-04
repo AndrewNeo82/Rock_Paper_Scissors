@@ -70,6 +70,7 @@ body {
 }
 .last-pick i {
     font-size: 90%;
+    color: #00203fff;
 }
 
 /* Displays a random message after each round and at the end of the game */
@@ -190,6 +191,7 @@ button:hover {
 }
 .hand i {
     font-size: 1.9rem;
+    color: #00203fff;
 }
 
 /* Button to reset the game after the rounds are complete, hidden until the end of the game */
