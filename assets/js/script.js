@@ -20,6 +20,27 @@ const scissorsBtn = document.getElementById("scissors");
 const message = document.getElementById("message");
 const choose = document.getElementById("choose");
 
+// Messages to display after each round 
+
+const WIN_MESSAGES = [
+  "Congratulations! You won!",
+  "You win! What a hero!",
+  "WooHoo",
+  "Wow so Impressive!",
+  "The Computer Never Stood a Chance!",
+  "Winner Winner Winner"
+];
+
+const LOSE_MESSAGES = [
+  "The Computer Cheated",
+  "So unlucky",
+  "Better luck next time",
+  "Try again, you'll win this time",
+  "Oh No, You Lost 😞"
+];
+
+const MAX_MOVES = 5;
+
 let playerScore = 0;
 let computerScore = 0;
 
@@ -31,62 +52,32 @@ function computerTurn() {
   return choices[cTurn];
 }
 
-// Function to handle choice of win messages 
+// Function to pick a message to display
 
-function pickMessage() {
-  const winMessages = [
-    "Congratulations! You won!",
-    "You win! What a hero!",
-    "WooHoo ",
-    "Wow so Impressive!",
-    "The Computer Never Stood a Chance!",
-    "Winner Winner Winner"
-  ];
-
-  const winIndex = Math.floor(Math.random() * winMessages.length);
-  const winMessage = winMessages[winIndex];
-
-  return winMessage;
+function pickMessage(win) {
+  const messageList = win ? WIN_MESSAGES : LOSE_MESSAGES;
+  const index = Math.floor(Math.random() * messageList.length);
+  return messageList[index];
 }
 
-// Function to pick a message to display if the computer wins the round 
-
-function pickLoseMessage() {
-  const loseMessages = [
-    "The Computer Cheated",
-    "So unlucky",
-    " Better luck next time ",
-    "Try again you'll win this time",
-    " Oh No, You Lost (sad face)"
-  ];
-
-  const loseIndex = Math.floor(Math.random() * loseMessages.length);
-  const loseMessage = loseMessages[loseIndex];
-
-  return loseMessage;
+// Function to render the player or computer choice
+function renderChoice(isPlayer, choice) {
+  const element = isPlayer ? playerPick : computerPick;
+  element.innerHTML = choicesMap[choice];
+  console.log(choice);
 }
-
 
 /* Function to handle player choice and the main game logic which 
  calls the functions that handle if the player wins loses or draws the round */
 
-function gamePlay(playerChoice) {
+ function gamePlay(event) {
+  const playerChoice = this.dataset.choice;
   const computerChoice = computerTurn();
-  playerPick.innerHTML = choicesMap[playerChoice];
-
-  if (playerChoice === computerChoice) {
-    handleDraw();
-  } else if (
-    (playerChoice === "rock" && computerChoice === "scissors") ||
-    (playerChoice === "paper" && computerChoice === "rock") ||
-    (playerChoice === "scissors" && computerChoice === "paper")
-  ) {
-    handleWin();
-
-  } else {
-    handleLoss();
-  }
-  endGame();
+  renderChoice(true, playerChoice);
+  renderChoice(false, computerChoice);
+  const moveResult = checkMoveResult(playerChoice, computerChoice);
+  renderMoveResult(moveResult);
+  checkIfGameEnd();
 }
 
 /* Function called when the player wins the round,  displays a message increments player 
