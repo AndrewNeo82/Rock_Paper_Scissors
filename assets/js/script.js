@@ -48,16 +48,22 @@ let computerScore = 0;
 
 function computerTurn() {
   let cTurn = Math.floor(Math.random() * choices.length);
-  computerPick.innerHTML = choicesMap[choices[cTurn]];
-  return choices[cTurn];
+  const computerChoice = choices[cTurn];
+  computerPick.innerHTML = choicesMap[computerChoice];
+  return computerChoice;
 }
 
-// Function to pick a message to display
+/* Function to handle player choice and the main game logic which 
+ calls the functions that handle if the player wins loses or draws the round */
 
-function pickMessage(win) {
-  const messageList = win ? WIN_MESSAGES : LOSE_MESSAGES;
-  const index = Math.floor(Math.random() * messageList.length);
-  return messageList[index];
+ function gamePlay(event) {
+  const playerChoice = this.dataset.choice;
+  const computerChoice = computerTurn();
+  renderChoice(true, playerChoice);
+  renderChoice(false, computerChoice);
+  const moveResult = checkMoveResult(playerChoice, computerChoice);
+  renderMoveResult(moveResult);
+  checkIfGameEnd();
 }
 
 // Function to render the player or computer choice
@@ -79,19 +85,6 @@ function renderMoveResult(moveResult) {
   }
 }
 
-/* Function to handle player choice and the main game logic which 
- calls the functions that handle if the player wins loses or draws the round */
-
- function gamePlay(event) {
-  const playerChoice = this.dataset.choice;
-  const computerChoice = computerTurn();
-  renderChoice(true, playerChoice);
-  renderChoice(false, computerChoice);
-  const moveResult = checkMoveResult(playerChoice, computerChoice);
-  renderMoveResult(moveResult);
-  checkIfGameEnd();
-}
-
 // Checks for the result of the round
 
 function checkMoveResult(playerChoice, computerChoice) {
@@ -106,6 +99,14 @@ function checkMoveResult(playerChoice, computerChoice) {
   } else {
     return "lose";
   }
+}
+
+// Function to pick a message to display
+
+function pickMessage(win) {
+  const messageList = win ? WIN_MESSAGES : LOSE_MESSAGES;
+  const index = Math.floor(Math.random() * messageList.length);
+  return messageList[index];
 }
 
 /* Function called when the player wins the round,  displays a message increments player 
