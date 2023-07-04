@@ -100,23 +100,25 @@ function checkMoveResult(playerChoice, computerChoice) {
 score and changes the border of the last pick display */
 
 function handleWin() {
-  const winMessage = pickMessage();
+  const winMessage = pickMessage(true);
   message.textContent = winMessage;
   playerScore++;
   yourScore.textContent = "Player Score: " + playerScore;
   playerPick.style.borderColor = "green";
   computerPick.style.borderColor = "red";
+  checkIfGameEnd();
 }
-/* Function called when the player loses the round,  displays a message increments computer 
-score and changes the border of the last pick display. */
+
+// Function to handle the player losing the round
 
 function handleLoss() {
-  const loseMessage = pickLoseMessage();
+  const loseMessage = pickMessage(false);
   message.textContent = loseMessage;
   computerScore++;
   cpuScore.textContent = "Computer Score: " + computerScore;
   playerPick.style.borderColor = "red";
   computerPick.style.borderColor = "green";
+  checkIfGameEnd();
 }
 
 // Function called when the round is  a draw, displays a message and changed border of last pick.
