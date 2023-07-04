@@ -140,6 +140,7 @@ body {
 #buttons {
     display: flex;
     justify-content: center;
+    color: #00203fff;
 }
 
 button:hover {
