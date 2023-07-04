@@ -67,6 +67,18 @@ function renderChoice(isPlayer, choice) {
   console.log(choice);
 }
 
+//Render move result 
+
+function renderMoveResult(moveResult) {
+  if (moveResult === "win") {
+    handleWin();
+  } else if (moveResult === "lose") {
+    handleLoss();
+  } else {
+    handleDraw();
+  }
+}
+
 /* Function to handle player choice and the main game logic which 
  calls the functions that handle if the player wins loses or draws the round */
 
