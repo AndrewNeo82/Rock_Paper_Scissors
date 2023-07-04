@@ -26,8 +26,8 @@ const choose = document.getElementById("choose");
 // Messages to display after each round depending on the result
 
 const WIN_MESSAGES = [
-  "Congratulations! You won!",
-  "You win! What a hero!",
+  "Congratulations! You won! 😁",
+  "You win! What a hero! 😁",
   "WooHoo",
   "Wow so Impressive!",
   "The Computer Never Stood a Chance!",
@@ -35,7 +35,7 @@ const WIN_MESSAGES = [
 ];
 
 const LOSE_MESSAGES = [
-  "The Computer Cheated",
+  "The Computer Cheated 🤬 ",
   "So unlucky",
   "Better luck next time",
   "Try again, you'll win this time",
