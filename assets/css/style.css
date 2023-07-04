@@ -66,7 +66,7 @@ body {
     transform: translate(-50%, -50%);
 }
 .last-pick i {
-    font-size: 90%;
+    font-size: 75%;
     color: #00203fff;
 }
 
@@ -251,7 +251,7 @@ button:hover {
 
     #scores {
         text-align: center;
-        width: 350px;
+        width: 300px;
         height: 40px;
         font-size: 12px;
     }
@@ -294,8 +294,8 @@ button:hover {
         margin-bottom: 10px;
         margin: auto;
         height: 40px;
-        width: 300px;
-        font-size: 12px;
+        width: 250px;
+        font-size: 10px;
     }
     #message {
         width: 300px;
