@@ -2,9 +2,9 @@
 
 const choices = ["rock", "paper", "scissors"];
 const choicesMap = {
-  rock: '<i class="fa-solid fa-hand-back-fist" style="color: #00203fff;"></i>',
-  paper: '<i class="fa-solid fa-hand" style="color: #00203fff;"></i>',
-  scissors: '<i class="fa-solid fa-hand-scissors" style="color: #00203fff;"></i>'
+  rock: '<i class="fa-solid fa-hand-back-fist"></i>',
+  paper: '<i class="fa-solid fa-hand"></i>',
+  scissors: '<i class="fa-solid fa-hand-scissors"></i>'
 };
 
 // Get Dom Elements
