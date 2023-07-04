@@ -53,8 +53,7 @@ function computerTurn() {
   return computerChoice;
 }
 
-/* Function to handle player choice and the main game logic which 
- calls the functions that handle if the player wins loses or draws the round */
+// Main game play  
 
  function gamePlay(event) {
   const playerChoice = this.dataset.choice;
@@ -66,14 +65,15 @@ function computerTurn() {
   checkIfGameEnd();
 }
 
-// Function to render the player or computer choice
+// Function to render the player or computer choice and display the last choice
+
 function renderChoice(isPlayer, choice) {
   const element = isPlayer ? playerPick : computerPick;
   element.innerHTML = choicesMap[choice];
   console.log(choice);
 }
 
-//Render move result 
+// Gets the result and calls the appropriate function to handle the result
 
 function renderMoveResult(moveResult) {
   if (moveResult === "win") {
@@ -85,7 +85,7 @@ function renderMoveResult(moveResult) {
   }
 }
 
-// Checks for the result of the round
+// compares the player choice and computer choice and returns win lose or draw depending on the choices
 
 function checkMoveResult(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
@@ -101,7 +101,7 @@ function checkMoveResult(playerChoice, computerChoice) {
   }
 }
 
-// Function to pick a message to display
+// Function to pick a message to display fro the win messages and lose message arrays 
 
 function pickMessage(win) {
   const messageList = win ? WIN_MESSAGES : LOSE_MESSAGES;
@@ -110,7 +110,7 @@ function pickMessage(win) {
 }
 
 /* Function called when the player wins the round,  displays a message increments player 
-score and changes the border of the last pick display */
+score and changes the border of the last pick display checks if game has ended */
 
 function handleWin() {
   const winMessage = pickMessage(true);
@@ -122,7 +122,8 @@ function handleWin() {
   checkIfGameEnd();
 }
 
-// Function to handle the player losing the round
+/* Function to handle the player losing the round displays a message increments computer  
+score and changes the border of the last pick display checks if game has ended */
 
 function handleLoss() {
   const loseMessage = pickMessage(false);
@@ -134,7 +135,8 @@ function handleLoss() {
   checkIfGameEnd();
 }
 
-// Function called when the round is  a draw, displays a message and changed border of last pick.
+/* Function called when the round is  a draw, displays a message and changed border of last pick
+checks if game has ended */
 
 function handleDraw() {
   message.textContent = "A Draw! Everybody Loses!";
@@ -152,7 +154,7 @@ function disableButtons (){
 
 }
 
-// Function to check if the game has ended
+// Function to check if the game has ended if either player or computer reaches score of five
 
 function checkIfGameEnd() {
   if (playerScore === MAX_MOVES || computerScore === MAX_MOVES) {
@@ -160,7 +162,7 @@ function checkIfGameEnd() {
   }
 }
 
-// ends the game
+// ends the game displays win or loss game message and calls the function to disable the buttons
 
 function endGame() {
   restartGame.style.display = "block";
