@@ -57,8 +57,8 @@ function computerTurn() {
   return computerChoice;
 }
 
-//  
-
+// Handles the flow of the game logic 
+  
 function gamePlay(event) {
   const playerChoice = this.dataset.choice;
   const computerChoice = computerTurn();
@@ -216,4 +216,4 @@ document.querySelectorAll(".hand").forEach((element) => {
 // Event listener for the button to play again
 
 restartGame.addEventListener("click", resetGame);
-})
+});
