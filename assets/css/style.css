@@ -85,7 +85,7 @@ body {
     font-size: 14px;
     border-radius: 3px;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 /* Score board displays the player score and computer score*/
@@ -190,7 +190,7 @@ button:hover {
     height: 130px;
 }
 .hand i {
-    font-size: 1.9rem;
+    font-size: 2rem;
     color: #00203fff;
 }
 
@@ -205,9 +205,11 @@ button:hover {
     display: none;
     background-color: grey;
     border: 5px solid #adefd1ff;
+    color: #00203fff;
     border-radius: 10%;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 500;
+    font-family: 'Press Start 2P', nineteen_ninety_sevenregular, Arial, Helvetica, sans-serif;
     margin-top: 1%;
 }
 
@@ -236,17 +238,25 @@ button:hover {
         height: 15px;
         margin-top: 10px;
         font-size: 10px;
-        letter-spacing: 1px;
-        }
+        letter-spacing: 2px;
+        line-height: 12px;        }
 
     .last-pick {
-        font-size: 50px;
+        border: 8px solid #adefd1ff;
         justify-content: center;
-        width: 30%;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         margin: auto;
         margin-top: 10px;
         padding: 10px;
+    }
+
+    .last-pick p {
+        font-size: 14px;
+    }
+
+    .last-pick i {
+        font-size: 40%;
     }
 
     #scores {
@@ -268,6 +278,10 @@ button:hover {
         margin-top: 15px;
         border: 8px solid #adefd1ff;
 
+    }
+
+    #choose {
+        margin: auto;
     }
 
     #choose p {
@@ -311,7 +325,7 @@ button:hover {
     }
 
     .last-pick p {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .hand {
@@ -320,6 +334,11 @@ button:hover {
         width: 80px;
         height: 80px;
         margin-top: 10px;
+    }
+
+    #choose {
+        margin: 2px 2px;
+
     }
 
     #choose p {
